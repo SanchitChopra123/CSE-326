@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title>VICTUS</title>
+    <link rel="stylesheet" href="style2.css"
+ </head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="logo name">
+                <img src="images/name.png"> 
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="main.html">PHONE</a></li>
+                    <li><a href="comingsoon.html">ACCESSORIES</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="xyz"></div>
+            <img src="images/product 2.png" class="mobile1">
+            <div id="circle">
+                <div class="feature a">
+                    <img src="images/battery.png">
+                    <div>
+                        <h1>BATTERY</h1>
+                        <p>5000mah battery with 67W fast charging</p>
+                    </div>
+                </div>
+                <div class="feature b">
+                    <img src="images/display2.png">
+                    <div>
+                        <h1>DISPLAY</h1>
+                        <p>6.67inch FHD WITH 120HZ AMOLED</p>
+                    </div>
+                </div>
+                <div class="feature c">
+                    <img src="images/camera.png">
+                    <div>
+                        <h1>CAMERA</h1>
+                        <p>108MP camera,zoom upto 50x optical and 100x digital</p>
+                    </div>
+                </div>
+                <div class="feature d">
+                    <img src="images/processor.png">
+                    <div>
+                        <h1>PROCESSOR</h1>
+                        <p>SNAPDRAGON 8 GEN 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <H4>SPECIFICATIONS</H4>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+        <button class="button">COMING SOON</button>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+            var rotateValue = circle.style.transform;
+            var rotatesum;
+            upBtn.onclick = function() {
+
+                rotatesum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotatesum
+                rotateValue = rotatesum;
+            }
+            downBtn.onclick = function() {
+                rotatesum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotatesum;
+                rotateValue = rotatesum;
+            }
+    </script>
+</body>
+</html>
